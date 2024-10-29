@@ -18,6 +18,7 @@ import org.slf4j.LoggerFactory;
 public class Joy implements ModInitializer {
     public static final String MOD_ID = "joy";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+    public static final String EstrogenBlock = null;
     @Override
     public void onInitialize() {
         ModParticles.registerParticles();
