@@ -76,6 +76,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModBlocks.MLM_CANDLE)).entries((displayContext, entries) -> {
                        // Using Gay Bed since I don't know how to do vanilla items & it's a block.
                         entries.add(ModBlocks.GAY_BED);
+                        entries.add(ModBlocks.ESTROGEN_BLOCK);
 
                     }).build());
     public static final ItemGroup JOY_MISC =  Registry.register(Registries.ITEM_GROUP,

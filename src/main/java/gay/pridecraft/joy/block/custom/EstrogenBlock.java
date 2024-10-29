@@ -1,6 +1,7 @@
 package gay.pridecraft.joy.block.custom;
 
 import gay.pridecraft.joy.Joy;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.block.Block;
@@ -9,6 +10,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 
 public class EstrogenBlock {
+
 	public static Block register(Block block, String name, boolean shouldRegisterItem) {
 		// Register the block and its item.
 		Identifier id = Identifier.of(Joy.EstrogenBlock, name);

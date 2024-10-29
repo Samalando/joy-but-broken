@@ -2,12 +2,18 @@ package gay.pridecraft.joy.block;
 
 import gay.pridecraft.joy.Joy;
 import gay.pridecraft.joy.block.custom.CustomBedBlock;
+import gay.pridecraft.joy.block.custom.EstrogenBlock;
+import gay.pridecraft.joy.item.ModItems;
+import net.fabricmc.api.ModInitializer;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import org.slf4j.LoggerFactory;
+
+import java.util.logging.Logger;
 
 public class ModBlocks {
 
@@ -161,6 +167,9 @@ public class ModBlocks {
     public static final Block PROGRESS_CANDLE_CAKE = registerBlock("progress_candle_cake",
             new CandleCakeBlock(PROGRESS_CANDLE, AbstractBlock.Settings.copy(Blocks.CANDLE_CAKE)));
 
+    public static final Block ESTROGEN_BLOCK = registerBlock("estrogen_block_pls_work",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
+
     private static Block registerBlock(String name, Block block) {
 
         registerBlockItem(name, block);
@@ -177,4 +186,3 @@ public class ModBlocks {
         // Joy.LOGGER.info("Adding gay blocks from" + Joy.MOD_ID);
     }
 }
-
